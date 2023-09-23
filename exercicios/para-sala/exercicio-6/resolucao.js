@@ -3,7 +3,7 @@ Account.prototype.credit = function credit(amount) {
     console.log(`Novo saldo após crédito: ${this.balance}`)
 }
 
-Account.prototype.debit = function addBenefits(amount) {
+Account.prototype.debit = function debit(amount) {
     if (this.balance >= amount) {
         this.balance -= amount
         console.log(`Novo saldo após débito: ${this.balance}`)
